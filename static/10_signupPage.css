@@ -1,0 +1,241 @@
+
+.display-2 {
+    padding-bottom : 0.5rem ;
+    margin-top : 4rem;
+    color : white ; 
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.input label{
+    color : white;
+}
+
+.input {
+
+    margin-left : 28rem ;
+    margin-right : 28rem ;
+    margin-top : 8.5rem ;
+    /* background-color: #fff; */
+    background-color: rgba(0,0,0,0.70);
+    /* margin-right : 25rem ; */
+    /* background-color: #fff; */
+    /* background-color: rgb(255,255,255); */
+    padding-bottom : 1.5rem ;
+    padding-top : 1.5rem ;
+    border-radius: 1rem;
+    color : white;
+}
+
+.radio {
+    font-size: 1.20rem;
+    margin-top : 0.5rem ;
+    margin-bottom : 1.5rem ;
+    margin-left : 2rem ;
+
+}
+
+.error_class {   
+    font-family: 'Cairo', sans-serif;
+    color : black;
+    text-align : center;
+    background-color: #fff;
+    background-color: rgba(144 , 224 , 239 , 0.75);
+}
+
+/* .submit_successful {
+   
+    
+    color : black;
+    text-align : center;
+    background-color: #fff;
+    background-color: rgba(128, 237, 153,0.75);
+} */
+
+form{
+    /* color : white; */
+    padding-bottom : 3rem ;
+}
+
+#userName {
+    margin-right : 0rem;
+    margin-left : 0rem ;
+}
+
+#contact {
+    margin-right : 0rem;
+    margin-left : 0rem ;
+}
+
+
+#successMessageSection {
+    color : black;
+    text-align : center;
+    font-family: 'Cairo', sans-serif;
+    margin-left : 18rem ;
+    margin-right : 18rem ;
+    margin-bottom : 5rem ;
+    padding-bottom : 3rem ;
+    border-radius : 2rem;
+    background-color: #80ed99;
+    text-align: center;
+}
+
+
+.mb-3 {
+    color : black ;
+    font-weight: 600;
+
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+    /* position: relative; */
+}
+
+.btn {
+    margin-left : 2rem;
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media (min-width : 1200px) {
+    .input {
+        margin-left : 22rem ;
+        margin-right : 22rem ;
+        margin-top : 6rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 18rem ;
+        margin-right : 18rem ;
+        margin-bottom : 3rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+    
+}
+
+
+@media (min-width : 1100px) and (max-width : 1200px) {
+    .input {
+        margin-left : 19rem ;
+        margin-right : 19rem ;
+        margin-top : 6rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 14rem ;
+        margin-right : 14em ;
+        margin-bottom : 2rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+}
+
+@media (min-width : 900px) and (max-width : 1100px) {
+    .input {
+        margin-left : 15rem ;
+        margin-right : 15rem ;
+        margin-top : 5rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 14rem ;
+        margin-right : 14em ;
+        margin-bottom : 2rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+}
+
+@media (min-width : 700px) and (max-width : 900px) {
+    .input {
+        margin-left : 11rem ;
+        margin-right : 11rem ;
+        margin-top : 5rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 10rem ;
+        margin-right : 10rem ;
+        margin-bottom : 2rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+}
+
+@media (min-width : 600px) and (max-width : 700px) {
+    .input {
+        margin-left : 8rem ;
+        margin-right : 8rem ;
+        margin-top : 5rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 4rem ;
+        margin-right : 4em ;
+        margin-bottom : 2rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+}
+
+@media (min-width : 400px) and (max-width : 600px) {
+    .input {
+        margin-left : 4rem ;
+        margin-right : 4rem ;
+        margin-top : 5rem ;
+    }
+
+    #successMessageSection {
+        margin-left : 3rem ;
+        margin-right : 3em ;
+        margin-bottom : 2rem ;
+        padding-bottom : 1rem ;
+        padding-top : 1rem ;
+    }
+}
+
+@media (min-width : 350px) and (max-width : 400px) {
+    .input {
+        margin-left : 3rem ;
+        margin-right : 3rem ;
+        margin-top : 5rem ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

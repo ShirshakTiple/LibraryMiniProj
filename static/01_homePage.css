@@ -1,0 +1,82 @@
+.card {   
+    z-index: 100;
+    margin : 10rem 30rem 0rem 30rem;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.btn{ 
+    display : block;
+    margin-top : 1rem;
+}
+
+.card-title {
+    position : relative;
+    text-align: center;
+}
+
+.display-1 {
+    margin-top : 4rem;
+    color : white ;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (min-width : 900px) and (max-width : 1300px){
+    .card {
+        margin : 10rem 15rem 0rem 15rem;
+    }
+}
+
+@media  (min-width : 520px) and (max-width : 900px){
+    .card {
+        margin : 10rem 9rem 0rem 9rem;
+    }
+}
+
+@media  (max-width : 520px){
+    .card {
+        margin : 10rem 6rem;
+    }
+}

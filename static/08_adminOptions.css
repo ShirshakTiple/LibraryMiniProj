@@ -1,0 +1,178 @@
+
+
+.box {
+    position: relative;
+    margin-top : 15rem ;
+
+    display: flex ;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+h2 {
+    padding-top : 1rem ;
+    padding-bottom : 1rem ;
+    margin-top : 6rem ;
+    color : white ;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.25)
+}
+
+.display-2 {
+    
+    color : white ;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.box {
+    margin-top : 4.5rem ;
+}
+
+.card {
+    border-radius: 2rem;
+    border: 0rem ;
+    /* margin-top : 0rem ; */
+    margin-right : 2rem ; 
+    text-align: center;
+    color : white;
+    
+}
+
+.card .card-title{
+    padding-top : 7.5rem ;
+}
+
+.card .card-body{
+    background-color : rgba(0,0,0,0.7) ;
+    border-radius: 2rem;
+    
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media (min-width : 1200px){
+    .box {
+        padding-bottom: 2rem;;
+    }
+
+    .card{
+        margin-right : 2rem ;
+    }
+    .card:nth-of-type(4) {
+        margin-top : 2.5rem ;
+        margin-left : 0.5rem ;
+        margin-right : 2rem ;
+        margin-bottom : 2.5rem ;
+        /* padding-bottom: 3rem; */
+        /* flex-direction: start; */
+    }
+
+
+}
+
+@media (min-width : 1000px) and (max-width : 1200px){
+    .card{
+        margin-left : 1rem ;
+        margin-right : 1.5rem ;
+    }
+
+    .card:nth-of-type(4) {
+        margin-top : 2.5rem ;
+        margin-left : 0.5rem ;
+        margin-right : 2rem ;
+        margin-bottom : 2.5rem ;
+    }
+}
+
+@media (min-width : 800px) and (max-width : 1000px){
+    .box {
+        margin-top : 5rem ;
+    }
+    
+    .card{
+        margin-top : 1.5rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 1.5rem ;
+    }
+
+    .card:nth-of-type(3) {
+        margin-top : 1rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 3rem ;
+    }
+
+    .card:nth-of-type(4) {
+        margin-top : 1rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 3rem ;
+    }
+}
+
+@media (min-width : 650px) and (max-width : 800px){
+    .box {
+        margin-top : 3rem ;
+    }
+    
+    .card{
+        margin-top : 1.5rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 1.5rem ;
+    }
+
+    .card:nth-of-type(3) {
+        margin-top : 1rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 3rem ;
+    }
+
+    .card:nth-of-type(4) {
+        margin-top : 1rem ;
+        margin-left : 2rem ;
+        margin-right : 2rem ;
+        margin-bottom : 3rem ;
+    }
+}
+
+@media (min-width : 350px) and (max-width : 650px){
+    .box {
+        margin-top : 3rem ;
+    }
+    
+    .card{
+        margin-top : 0rem ;
+        margin-left : 3rem ;
+        margin-right : 2.5rem ;
+        margin-bottom : 2rem ;
+    }
+}

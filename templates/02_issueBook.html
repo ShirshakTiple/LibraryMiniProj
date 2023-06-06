@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "../static/02_issueBook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Sora:wght@300&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book</title>
+</head>
+
+    <body class = "animate-in" style="background-image: url(../static/issue11.jpg); background-size: cover;">
+
+      <!-- NAV-BAR -->
+      <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="https://www.canva.com/design/DAFlEAogSGY/4B6Wb52tK6nddW7w6JqvVg/view">About Project</a>
+              <a class="nav-link" href="/admin_options">Previous Page</a>
+              <a class="nav-link" href="https://www.coep.org.in/">COEP</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Issue book main section  -->
+      <h2 class="display-2">Issue Book</h2>
+
+      <form action = "/admin/issue" method="POST">
+        <div class ="input">
+
+          <div class="mb-3">
+            <label for="bookName" class="form-label">Book Name : </label>
+            <input type="text" class="form-control" id="Book Name" name="bookName">
+          </div>
+
+          <div class="row" id = "MISandID">
+
+            <div class="col-md-6 mb-3">
+              <label for="mis" class="form-label">MIS Number : </label>
+              <input type="number" class="form-control" id="mis" name="mis">
+            </div>
+            <div class="col-md-6  mb-3">
+              <label for="memberID" class="form-label">Member ID : </label>
+              <input type="text" class="form-control" id="memberID" name="memberID">
+            </div>
+
+          </div>
+
+          <div class="row" id = "AccISBN">  
+            <div class="col-md-6 mb-3">
+              <label for="isbn" class="form-label">ISBN Number : </label>
+              <input type="number"  class="form-control" id="isbn" name="isbn">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="accession" class="form-label">Accession Number : </label>
+              <input type="text"  class="form-control" id="accession" name="accession">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="issueDate" class="form-label">Issue Date : </label>
+            <input type="date" class="form-control" id="issueDate" name="issueDate">
+          </div>
+
+                        
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      {% if copiesFlag == 1 %}
+      <div class = "error_class">
+        <h2 class = "display-7">NO COPIES AVAILABLE !</h2>
+      </div>
+      {% endif %}
+
+      {% if accFlag == 1 %}
+      <div class = "error_class">
+        <h2 class = "display-7">CHOOSE DIFFERENT ACCESSION NUMBER !</h2>
+      </div>
+      {% endif %}
+
+      {% if memFlag == 1 %}
+      <div class = "error_class">
+        <h2 class = "display-7">NOT A MEMBER !</h2>
+      </div>
+      {% endif %}
+
+      {% if issueFlag == 1 %}
+      <div class = "error_class">
+        <h2 class = "display-7">ONE ISSUE AT A TIME !</h2>
+      </div>
+      {% endif %}
+
+      {% if NameFlag == 1 %}
+      <div class = "error_class">
+        <h2 class = "display-7">INCORRECT DETAILS !</h2>
+      </div>
+      {% endif %}
+      
+      {% if Flag == 1 %}
+      <div class = "submit_successful">
+        <h2 class = "display-7">ISSUED SUCCESSFULLY !</h2>
+      </div>
+      {% endif %}
+        
+      <script>
+        window.addEventListener("beforeunload", function () {
+          document.body.classList.add("animate-out");
+        });
+      </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.table thead{
+    margin-top : 1.5rem;
+    /* position: relative; */
+    border-top :2px solid black;
+    border-bottom :2px solid black;
+
+}
+
+.searchBar {
+    margin-top : 1.5rem ;
+}
+
+#search-input {
+    margin-left : 5rem ;
+}
+
+
+#search-button {
+    margin-right : 5rem ;
+}
+
+.display-6 {
+    margin-top : 4rem;
+    /* position: relative; */
+    text-align : center;
+    background-color: #fff;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.btn  {
+    position: relative ;
+}
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
